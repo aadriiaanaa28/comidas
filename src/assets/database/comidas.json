@@ -1,0 +1,366 @@
+[
+  {
+    "Plato": "Sopa de pollo",
+    "Orden": "Primero",
+    "Categoría": "Verduras",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Lentejas",
+    "Orden": "Primero",
+    "Categoría": "Legumbres",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Berros",
+    "Orden": "Primero",
+    "Categoría": "Verduras",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Crema de calabacín",
+    "Orden": "Primero",
+    "Categoría": "Verduras",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Arroz",
+    "Orden": "Principal",
+    "Categoría": "Legumbres",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Pechuga a la plancha",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Papas sancochadas",
+    "Orden": "Guarnición",
+    "Categoría": "Papa",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Atún a la plancha",
+    "Orden": "Principal",
+    "Categoría": "Pescado",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Pescado rebozado",
+    "Orden": "Principal",
+    "Categoría": "Pescado",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Calamares",
+    "Orden": "Principal",
+    "Categoría": "Pescado",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "TIras de pollo",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Croquetas",
+    "Orden": "Principal",
+    "Categoría": "Pescado",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Tortilla de papas",
+    "Orden": "Principal",
+    "Categoría": "Papa",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Carne en salsa",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Cinta de lomo",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Muslos de pollo",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Gnochis",
+    "Orden": "Principal",
+    "Categoría": "Pasta",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Lomo",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Papas al ajillo",
+    "Orden": "Guarnición",
+    "Categoría": "Papa",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Pizza",
+    "Orden": "Principal",
+    "Categoría": "Pasta",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Rabas de calamar",
+    "Orden": "Principal",
+    "Categoría": "Pescado",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "San Jacobo ?",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Fajitas",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Papas arrugadas",
+    "Orden": "Principal",
+    "Categoría": "Papa",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Lasaña de carne",
+    "Orden": "Principal",
+    "Categoría": "Pasta",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Hamburguesa",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Nuggets",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Solomillo",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Bistec",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Pechuga al appletiser",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Carne cochino",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Papas fritas",
+    "Orden": "Guarnición",
+    "Categoría": "Papa",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Arroz ",
+    "Orden": "Guarnición",
+    "Categoría": "Legumbres",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Crema de calabaza",
+    "Orden": "Primero",
+    "Categoría": "Verduras",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Crema de verduras",
+    "Orden": "Primero",
+    "Categoría": "Verduras",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Pescado a la plancha",
+    "Orden": "Principal",
+    "Categoría": "Pescado",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Pescado al horno",
+    "Orden": "Principal",
+    "Categoría": "Pescado",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Pasta boloñesa",
+    "Orden": "Principal",
+    "Categoría": "Pasta",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Ensalada de pasta",
+    "Orden": "Primero",
+    "Categoría": "Pasta",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Papas sancochadas con atún",
+    "Orden": "Principal",
+    "Categoría": "Pescado",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Huevos rellenos",
+    "Orden": "Guarnición",
+    "Categoría": "Huevo",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Judías a la vinagreta",
+    "Orden": "Principal",
+    "Categoría": "Ensalada",
+    "Lleva Guarnición": null,
+    "Especial juanvi": "Juanvi"
+  },
+  {
+    "Plato": "Garbanzada",
+    "Orden": "Principal",
+    "Categoría": "Legumbres",
+    "Lleva Guarnición": null,
+    "Especial juanvi": "Juanvi"
+  },
+  {
+    "Plato": "Paella",
+    "Orden": "Principal",
+    "Categoría": "Legumbres",
+    "Lleva Guarnición": null,
+    "Especial juanvi": "Juanvi"
+  },
+  {
+    "Plato": "Hígado",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": "Juanvi"
+  },
+  {
+    "Plato": "Pollo a la miel y mostaza",
+    "Orden": "Principal",
+    "Categoría": "Carne",
+    "Lleva Guarnición": "S",
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Pasta carbonara",
+    "Orden": "Principal",
+    "Categoría": "Pasta",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Pasta con queso",
+    "Orden": "Principal",
+    "Categoría": "Pasta",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Mac and cheese",
+    "Orden": "Principal",
+    "Categoría": "Pasta",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Pasta con chorizo",
+    "Orden": "Principal",
+    "Categoría": "Pasta",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Pasta con pollo",
+    "Orden": "Principal",
+    "Categoría": "Pasta",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  },
+  {
+    "Plato": "Pasta con jamón",
+    "Orden": "Principal",
+    "Categoría": "Pasta",
+    "Lleva Guarnición": null,
+    "Especial juanvi": null
+  }
+]

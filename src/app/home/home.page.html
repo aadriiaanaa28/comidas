@@ -1,20 +1,115 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Blank
+      <ion-icon name="restaurant-outline"></ion-icon>
+      Generador de Menús Semanales
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="container">
+    <!-- Formulario de generación -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Generar Menús</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-item>
+          <ion-label position="floating">¿Cuántos menús quieres generar?</ion-label>
+          <ion-input 
+            type="number" 
+            [(ngModel)]="cantidadMenus" 
+            min="1" 
+            max="30"
+            placeholder="7">
+          </ion-input>
+        </ion-item>
+        
+        <div class="button-group">
+          <ion-button expand="block" (click)="generarMenus()">
+            <ion-icon slot="start" name="refresh-outline"></ion-icon>
+            Generar Menús
+          </ion-button>
+          
+          <ion-button 
+            expand="block" 
+            fill="outline" 
+            color="danger"
+            (click)="limpiarMenus()"
+            *ngIf="menus.length > 0">
+            Limpiar
+          </ion-button>
+        </div>
+      </ion-card-content>
+    </ion-card>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <!-- Lista de menús generados -->
+    <div *ngIf="menus.length > 0" class="menus-container">
+      <h2 class="menus-title">Menús Generados</h2>
+      
+      <ion-card *ngFor="let menu of menus; let i = index">
+        <ion-card-header color="secondary">
+          <ion-card-title>
+            {{ getDiaNombre(i) }} - Menú {{ menu.id }}
+            <ion-badge color="warning" *ngIf="menu.platosOpcionales" class="ml-5">
+              Con alternativa para Adri y Ale
+            </ion-badge>
+          </ion-card-title>
+        </ion-card-header>
+        
+        <ion-card-content>
+          <!-- Menú principal -->
+          <ion-list>
+            <ion-item *ngFor="let plato of menu.platos" lines="none">
+              <ion-label>
+                <h3>{{ plato.Plato }}</h3>
+                <p>
+                  <ion-badge [color]="getColorOrden(plato.Orden)">{{ plato.Orden }}</ion-badge>
+                  <ion-badge color="medium" class="ml-5">{{ plato['Categoría'] }}</ion-badge>
+                  <ion-badge color="success" *ngIf="plato['Lleva Guarnición'] === 'S'" class="ml-5">
+                    Con guarnición
+                  </ion-badge>
+                  <ion-badge color="danger" *ngIf="plato['Especial juanvi'] === 'Juanvi'" class="ml-5">
+                    Especial Juanvi
+                  </ion-badge>
+                </p>
+              </ion-label>
+            </ion-item>
+          </ion-list>
+
+          <!-- Menú opcional para Juanvi -->
+          <div *ngIf="menu.platosOpcionales" class="menu-alternativo">
+            <div class="alternativa-header">
+              <ion-icon name="swap-horizontal-outline"></ion-icon>
+              <strong>Alternativa para Adri y Ale</strong>
+            </div>
+            <ion-list>
+              <ion-item *ngFor="let plato of menu.platosOpcionales" lines="none">
+                <ion-label>
+                  <h3>{{ plato.Plato }}</h3>
+                  <p>
+                    <ion-badge [color]="getColorOrden(plato.Orden)">{{ plato.Orden }}</ion-badge>
+                    <ion-badge color="medium" class="ml-5">{{ plato['Categoría'] }}</ion-badge>
+                    <ion-badge color="success" *ngIf="plato['Lleva Guarnición'] === 'S'" class="ml-5">
+                      Con guarnición
+                    </ion-badge>
+                  </p>
+                </ion-label>
+              </ion-item>
+            </ion-list>
+          </div>
+        </ion-card-content>
+      </ion-card>
+    </div>
+
+    <!-- Mensaje si no hay menús -->
+    <ion-card *ngIf="menus.length === 0" class="empty-state">
+      <ion-card-content class="ion-text-center">
+        <ion-icon name="restaurant-outline" size="large" color="medium"></ion-icon>
+        <h2>No hay menús generados</h2>
+        <p>Introduce la cantidad de menús que deseas y haz clic en "Generar Menús"</p>
+      </ion-card-content>
+    </ion-card>
   </div>
 </ion-content>
