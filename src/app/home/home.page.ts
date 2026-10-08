@@ -57,19 +57,16 @@ export class HomePage implements OnInit {
   }
 
   ngOnInit() {
-    // Cargar menús guardados desde localStorage
-    this.menuService.cargarMenusDesdeLocalStorage();
-    
-    // Obtener fecha de última generación
-    this.fechaUltimaGeneracion = this.menuService.obtenerFechaUltimaGeneracion();
-    
-    // Suscribirse a los cambios de menús
+    // Suscribirse a los cambios de menús primero
     this.menuService.getMenusGenerados().subscribe(menus => {
       this.menus = menus;
       if (menus.length > 0) {
         this.fechaUltimaGeneracion = this.menuService.obtenerFechaUltimaGeneracion();
       }
     });
+    
+    // Luego cargar menús guardados desde localStorage
+    this.menuService.cargarMenusDesdeLocalStorage();
   }
 
   generarMenus() {
