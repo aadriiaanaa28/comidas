@@ -1,0 +1,25 @@
+{
+  "name": "Generador de Menús Semanales",
+  "short_name": "Menús",
+  "theme_color": "#3880ff",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/comidas/",
+  "start_url": "/comidas/",
+  "description": "Aplicación para generar menús semanales de forma automática",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/comidas/assets/icon/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/comidas/assets/icon/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}
