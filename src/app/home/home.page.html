@@ -46,7 +46,13 @@
 
     <!-- Lista de menús generados -->
     <div *ngIf="menus.length > 0" class="menus-container">
-      <h2 class="menus-title">Menús Generados</h2>
+      <div class="menus-header">
+        <h2 class="menus-title">Menús Generados</h2>
+        <p class="fecha-generacion" *ngIf="fechaUltimaGeneracion">
+          <ion-icon name="calendar-outline"></ion-icon>
+          Generados el {{ getFechaFormateada() }}
+        </p>
+      </div>
       
       <ion-card *ngFor="let menu of menus; let i = index">
         <ion-card-header color="secondary">

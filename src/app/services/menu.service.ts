@@ -77,8 +77,31 @@ export class MenuService {
       }
     }
 
+    // Guardar en localStorage
+    this.guardarMenusEnLocalStorage(menus);
     this.menusGenerados$.next(menus);
     return menus;
+  }
+
+  private guardarMenusEnLocalStorage(menus: Menu[]): void {
+    try {
+      localStorage.setItem('menus-semanales', JSON.stringify(menus));
+      localStorage.setItem('menus-semanales-fecha', new Date().toISOString());
+    } catch (error) {
+      console.error('Error guardando menús en localStorage:', error);
+    }
+  }
+
+  cargarMenusDesdeLocalStorage(): void {
+    try {
+      const menusGuardados = localStorage.getItem('menus-semanales');
+      if (menusGuardados) {
+        const menus: Menu[] = JSON.parse(menusGuardados);
+        this.menusGenerados$.next(menus);
+      }
+    } catch (error) {
+      console.error('Error cargando menús desde localStorage:', error);
+    }
   }
 
   private generarMenuIndividual(
@@ -199,5 +222,20 @@ export class MenuService {
 
   limpiarMenus(): void {
     this.menusGenerados$.next([]);
+    // También limpiar localStorage
+    try {
+      localStorage.removeItem('menus-semanales');
+      localStorage.removeItem('menus-semanales-fecha');
+    } catch (error) {
+      console.error('Error limpiando localStorage:', error);
+    }
+  }
+
+  obtenerFechaUltimaGeneracion(): string | null {
+    try {
+      return localStorage.getItem('menus-semanales-fecha');
+    } catch (error) {
+      return null;
+    }
   }
 }
